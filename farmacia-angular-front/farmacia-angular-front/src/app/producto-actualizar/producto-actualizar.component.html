@@ -1,0 +1,64 @@
+<h3>Actualizar Producto</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">URL Imagen</label>
+            <input type="text" class="form-control" id="imagenproducto" required [(ngModel)]="producto.imagenproducto"
+                name="imagenproducto">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Nombre producto</label>
+            <input type="text" class="form-control" id="nombreproducto" required [(ngModel)]="producto.nombreproducto"
+                name="nombreproducto">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Prescripcion</label>
+            <input type="text" class="form-control" id="prescripcion" required [(ngModel)]="producto.prescripcion"
+                name="prescripcion">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Presentacion</label>
+            <input type="text" class="form-control" id="presentacion" required [(ngModel)]="producto.presentacion"
+                name="presentacion">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Precio Compra</label>
+            <input type="number" class="form-control" id="precio" required [(ngModel)]="producto.precio" name="precio">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Precio Unidad</label>
+            <input type="number" class="form-control" id="preciounitario" required
+                [(ngModel)]="producto.preciounitario" name="preciounitario">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Stock</label>
+            <input type="number" class="form-control" id="stock" required [(ngModel)]="producto.stock" name="stock">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Estado</label>
+            <input type="number" class="form-control" id="is_active" required [(ngModel)]="producto.is_active"
+                name="is_active">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Id_Categoria_Producto</label>
+            <input type="number" class="form-control" id="idcategoria" required [(ngModel)]="producto.idcategoria"
+                name="idcategoria">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Id_Marca_Producto</label>
+            <input type="number" class="form-control" id="idmarca" required [(ngModel)]="producto.idmarca"
+                name="idmarca">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Crear</button>
+    </form>
+</div>

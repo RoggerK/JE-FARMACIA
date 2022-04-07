@@ -1,0 +1,45 @@
+<!-- ESTAMOS EN LISTAR PRODUCTOS -->
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>IMG</th>
+                    <th>NOM_PRODUCTO</th>
+                    <th>PRESCRIPCION</th>
+                    <th>PRESENTACION</th>
+                    <th>PRECIO COMPRA</th>
+                    <th>PRECIO UN</th>
+                    <th>STOCK</th>
+                    <th>MODO</th>
+                    <th>NOM_CATEGORIA</th>
+                    <th>NOM_MARCA</th>
+                    <th>ACCION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pro of productoSp | async">
+                    <th>{{pro.id_producto}}</th>
+                    <td><img src={{pro.imagen_producto}} alt="..." width="80px" height="80px"></td>
+                    <td>{{pro.nombre_producto}}</td>
+                    <td>{{pro.prescripcion}}</td>
+                    <td>{{pro.presentacion}}</td>
+                    <td>{{pro.precio}}</td>
+                    <td>{{pro.precio_unitario}}</td>
+                    <td>{{pro.stock}}</td>
+                    <td>{{pro.is_active}}</td>
+                    <td>{{pro.nombrecategoria}}</td>
+                    <td>{{pro.nombremarca}}</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="btn bg-warning text-white" (click)="productoDetalle(pro.id_producto)"><i class="bi bi-card-list"></i></button>
+                            <button type="button" class="btn bg-primary text-white" (click)="productoActualizar(pro.id_producto)"><i class="bi bi-pencil-fill"></i></button>
+                            <button type="button" class="btn bg-danger text-white" (click)="productoEliminar(pro.id_producto)" ><i class="bi bi-trash3-fill"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

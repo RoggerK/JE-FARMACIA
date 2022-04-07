@@ -1,0 +1,37 @@
+<h2>Detalle Producto</h2> 
+
+<hr/>
+<div *ngIf="producto">
+  <div>
+    <label class="fs-5 fw-bold">Nombre:</label> {{producto.nombre_producto}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Prescripcion:</label> {{producto.prescripcion}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Presentacion:</label> {{producto.presentacion}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Precio Compra:</label> {{producto.precio}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Precio Unitario:</label> {{producto.precio_unitario}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Stock:</label> {{producto.stock}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Estado:</label> {{producto.is_active}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Nombre Categoria:</label> {{producto.nombrecategoria}}
+  </div>
+  <div>
+    <label class="fs-5 fw-bold">Nombre Marca:</label> {{producto.nombremarca}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="lista()" class="btn bg-primary text-white">Volver Lista de Producto</button>
+<br>
