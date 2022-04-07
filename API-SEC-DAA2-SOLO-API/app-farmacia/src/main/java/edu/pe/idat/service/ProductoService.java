@@ -57,7 +57,7 @@ public class ProductoService {
 					producto.getPrecio(),
 					producto.getPreciounitario(),
 					producto.getStock(),
-					producto.getIsactive(),
+					producto.getIs_active(),
 					producto.getIdcategoria(),
 					producto.getIdcategoria());
 		} else {
@@ -70,7 +70,7 @@ public class ProductoService {
 					producto.getPrecio(),
 					producto.getPreciounitario(),
 					producto.getStock(),
-					producto.getIsactive(),
+					producto.getIs_active(),
 					producto.getIdcategoria(),
 					producto.getIdcategoria());
 		}

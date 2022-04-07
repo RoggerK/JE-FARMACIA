@@ -55,7 +55,7 @@ public class Producto implements Serializable{
 	private Integer stock;
 
 	@Column(name = "is_active")
-	private Integer isactive;
+	private Integer is_active;
 
 	@Column(name = "id_categoria_producto")
 	private Integer idcategoria;
